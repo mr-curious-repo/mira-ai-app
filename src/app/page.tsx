@@ -10,11 +10,11 @@ export default async function Home() {
       {session ? (
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold">Welcome, {session.user?.name} 👋</h1>
-          <p className="text-gray-600">You're signed in as {session.user?.email}</p>
+          <p className="text-gray-600">You&apos;re signed in as {session.user?.email}</p>
         </div>
       ) : (
         <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold">You're not signed in</h1>
+          <h1 className="text-3xl font-bold">You&apos;re not signed in</h1>
           <Link
             href="/signin"
             className="text-blue-500 underline text-lg"
